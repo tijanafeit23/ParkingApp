@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogReg"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop= "true"
+        android:background="#ffa500"
+        app:titleTextColor="@color/white"
+        android:elevation="4dp"
+        app:title="Резервирање на паркинг"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/slika"
+        android:layout_width="160dp"
+        android:layout_height="134dp"
+        android:src="@drawable/simbol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добредојдовте во паркинг резервација!"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/log_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Корисничко име"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/log_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Лозинка"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="#FF5421"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:onClick="login"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Не си корисник?Регистрирај се!"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:textColor="#FF5421"/>
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Корисничко име"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Лозинка"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
