@@ -26,7 +26,7 @@ public class ParkingPlaces extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
 
-        List<String> pSkopje = Arrays.asList("Skopje", "Bitola");
+        List<String> pSkopje = Arrays.asList("Parking 1", "Parking 2", "Parking 3");
         List<String> pOhrid = Arrays.asList("1");
         List<String> pBitola = Arrays.asList("1");
         List<String> pPrilep = Arrays.asList("1");

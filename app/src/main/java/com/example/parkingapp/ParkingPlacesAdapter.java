@@ -2,6 +2,8 @@ package com.example.parkingapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,6 +62,10 @@ public class ParkingPlacesAdapter extends RecyclerView.Adapter<ParkingPlacesAdap
                 intent.putExtra("grad", grad);
                 intent.putExtra("parking", viewHolder.text.getText().toString());
                 v.getContext().startActivity(intent);
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(myContext);
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putString("grad",grad );//InputString: from the EditText
+                editor.commit();
             }
         });
     }
